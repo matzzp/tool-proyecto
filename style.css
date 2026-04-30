@@ -1,0 +1,371 @@
+
+
+body {
+    background-color: black;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 5px;
+
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    opacity: 85%;
+    
+}
+
+
+.divheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagenheader {
+    height: 4rem;
+    
+}
+
+
+.menunav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    background-color: black;
+    font-weight: 600;
+    padding: 0px;
+    margin: 10px 0px 20px 0px;
+    gap: 30px;
+    position: sticky;
+    top: 0px;
+   
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.listamenu:hover {
+    transition: 0.5s;
+    color: grey;
+    text-decoration: underline;
+    transform: scale(1.2);
+
+}
+
+/* CARRUSEL DE HOME */
+
+.ajustecarr  {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.botoncompraahora {
+    font-size: 3rem;
+    padding: 0px 10px;
+    margin-left: 15%;
+    border: 4px white solid;
+    background-color: rgba(0, 0, 0, 50%)
+    
+}
+
+
+.botoncompraahora:hover {
+    box-shadow: 0px 0px 20px white;
+
+}
+
+.botoncompraahora a {
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.botonshows a {
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+
+.botonshows {
+    font-size: 3rem;
+    padding: 0px 10px;
+    margin-bottom: 2rem;
+    border: 4px white solid;
+    background-color: rgba(0, 0, 0, 50%)
+    
+}
+
+
+.botonshows:hover {
+    box-shadow: 0px 0px 20px white;
+
+}
+
+
+.botonshows a {
+    text-decoration: none;
+    color: white;
+ 
+}
+
+.slideinoculum {
+    width: 30%;
+    margin-right: 15%;
+        
+}
+
+
+.slideremera{
+    width: 35%;
+    margin-right: 12%;
+
+}
+
+
+.slideinoculum, .slideremera {
+    filter: drop-shadow(0 0px 20px white);
+    
+}
+
+
+.h2tour{
+    font-size: 4rem;
+    text-decoration: underline;
+    text-shadow: 0px 0px 10px white;
+
+}
+
+
+.carousel-tour {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.tablatour tr th, .tablatour tr td {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+       
+}
+
+/* FONDO DEBAJO CARRUSEL HOME */
+
+.fondohome2 {
+    max-width: 100%;
+    height: 750px;
+    background-image: url(./pag/background-index/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+.fondohome3 {
+    max-width: 100%;
+    height: 750px;
+    background-image: url(./pag/background-index/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+
+
+/* MIEMBROS */
+
+.divpadremiembros{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 0;
+    
+}
+
+
+.targetauni {
+    width: 23%;
+    border: 2px white solid;
+    border-radius: 12px;
+    
+        
+}
+
+
+.imagenintegrante {
+    border-radius: 8px;    
+    width: 95%;
+
+}
+
+
+.imagenajus {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5%;
+
+}
+
+
+.divinfomiembros {
+    border: red 2px solid;
+    background-color: rgb(243, 243, 242);
+    color: black;
+    border-radius: 7px;
+    margin: 0.4rem 0.2rem;
+    
+    
+    
+}
+
+
+.informiembros {
+    text-align: left;
+    padding: 1rem 0.2rem;
+    max-width: 95%;
+    min-height: 25rem;
+    
+    
+    
+}
+
+
+.imagenmain {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 80vh;
+    align-items: center;
+
+}
+
+
+.d-block {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.sectionmerch {
+    display: flex;
+    margin-top: 5rem;
+    
+
+}
+
+
+.divmerch {
+    min-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+        
+}
+
+
+.divmerch > * {
+    min-width: 20%;
+    margin: 0% 2% 3% 2%;
+    
+}
+
+
+.divnavmerch {
+    background-color: black;
+    min-width: 20%;
+         
+}
+
+
+.divnavmerch ul {
+    position: sticky;
+    top: 10rem;
+
+}
+
+
+.lista-merch {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+
+
+.lista-merch li {
+    margin-top: 2rem;
+    
+}
+
+
+.lista-merch li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.lista-merch li a:hover {
+    color: rgb(126, 124, 124);
+    text-decoration: underline;
+}
+
+
+/* MUSIC */
+
+.seccionmusic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./pag/music/background-music.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: sticky;
+    max-height: 1080px;
+    padding-top: 5rem;
+}
+
+.divalbum {
+    display: flex;
+    flex-direction: column;
+    border: 2px red solid;
+    min-width: 45%;
+
+}
+.letspo {
+    display: flex;
+    
+}
