@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Betania+Patmos&family=Bungee&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=BJCree:wght@400;500;600;700&family=Betania+Patmos&family=Bungee&family=Noto+Sans+SC:wght@100..900&family=Paprika&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+BR:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <title>Tool</title>
@@ -14,6 +14,30 @@
 
 <body>
     <header>
+        <div class="responsivenav">
+            <p>
+                <button class="btn btn-primary botonnav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    ☰
+                </button>
+            </p>
+            <div class="divprinrespnav">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body cardmenu" >
+                       <nav class="menunavresponsive">
+                            <ul>
+                                <li class="listamenu"><a href="../index.html">HOME</a></li>
+                                <li class="listamenu"><a href="./members.html">MEMBERS</a></li>
+                                <li class="listamenu"><a href="./music.html">MUSIC</a></li>
+                                <li class="listamenu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
+                                <li class="listamenu"><a href="#">MERCH</a></li>
+                                <li class="listamenu"><a href="./tour.html">TOUR</a></li>
+                            </ul>
+                        </nav> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="divheader">
             <a href="../index.html"><img class="imagenheader" src="./logo/tool-header.jpg" alt="Nombre banda logo" /></a>
                     
@@ -22,7 +46,7 @@
                     <li class="listamenu"><a href="../index.html">HOME</a></li>
                     <li class="listamenu"><a href="./members.html">MEMBERS</a></li>
                     <li class="listamenu"><a href="./music.html">MUSIC</a></li>
-                    <li class="listamenu"><a href="./video.html">VIDEO</a></li>
+                    <li class="listamenu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
                     <li class="listamenu"><a href="#">MERCH</a></li>
                     <li class="listamenu"><a href="./tour.html">TOUR</a></li>
                 </ul>
@@ -32,20 +56,26 @@
 
     <main>
         <section class="sectionmerch">
-
+            
+            <input type="radio" name="filtro" id="todos" checked>
+            <input type="radio" name="filtro" id="ropa">
+            <input type="radio" name="filtro" id="discos">
+            <input type="radio" name="filtro" id="otros">
             <div class="divnavmerch">
-                    <ul class="lista-merch">
-                        <li ><a href="#">Todo</a></li>
-                        <li ><a href="./merch/ropa.html">Ropa</a></li>
-                        <li ><a href="./merch/discos.html">Discos</a></li>
-                        <li ><a href="./merch/otros.html">Otros</a></li>
-                    </ul>
+                
+                <ul class="lista-merch">
+                    <li ><label for="todos">Todo</label></li>
+                    <li ><label for="ropa">Ropa</label></li>
+                    <li ><label for="discos">Discos</label></li>
+                    <li ><label for="otros">Otros</label></li>
+                </ul>
+                    
             </div>
 
 
             <div class="divmerch">
                 
-                <div class="card1" style="width: 18rem;">
+                <div class="card1 product ropa" >
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -70,15 +100,14 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Canguro</h5>
+                        <p class="card-text">Fear inoculum antorcha</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
 
-                <div class="card2" style="width: 18rem;">
+                <div class="card2 product ropa" >
                     <div id="carouselExample2" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -100,15 +129,14 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Canguro</h5>
+                        <p class="card-text">Tool llave</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
             
 
-                <div class="card3" style="width: 18rem;">
+                <div class="card3 product ropa" >
                     <div id="carouselExample3" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -130,15 +158,14 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Remera</h5>
+                        <p class="card-text">10,000 days</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
 
-                <div class="card4" style="width: 18rem;">
+                <div class="card4 product ropa" >
                     <div id="carouselExample4" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -163,14 +190,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Remera</h5>
+                        <p class="card-text">Aenima</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card5" style="width: 18rem;">
+                <div class="card5 product ropa" >
                     <div id="carouselExample5" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -195,14 +221,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Remera</h5>
+                        <p class="card-text">10,000 days ojo</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card6" style="width: 18rem;">
+                <div class="card6 product ropa" >
                     <div id="carouselExample6" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -227,16 +252,15 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Remera</h5>
+                        <p class="card-text">Fear inoculum</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
             
 
-                <div class="card7" style="width: 18rem;">
+                <div class="card7 product otros" >
                     <div id="carouselExample7" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -258,14 +282,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Gorra</h5>
+                        <p class="card-text">Tool</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card8" style="width: 18rem;">
+                <div class="card8 product otros">
                     <div id="carouselExample8" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -288,16 +311,15 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Gorra</h5>
+                        <p class="card-text">Tool Fear inoculum</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
                 
 
-                <div class="card9" style="width: 18rem;">
+                <div class="card9 product otros" >
                     <div id="carouselExample9" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -317,16 +339,15 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Taza</h5>
+                        <p class="card-text">Spectre</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
             
 
-                <div class="card10" style="width: 18rem;">
+                <div class="card10 product otros" >
                     <div id="carouselExample10" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -346,14 +367,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Taza</h5>
+                        <p class="card-text">10,000 days</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card11" style="width: 18rem;">
+                <div class="card11 product discos" >
                     <div id="carouselExample11" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -373,14 +393,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">Opiate</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card12" style="width: 18rem;">
+                <div class="card12 product discos" >
                     <div id="carouselExample12" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -400,14 +419,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">Ænima</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card13" style="width: 18rem;">
+                <div class="card13 product discos" >
                     <div id="carouselExample10" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -427,14 +445,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">Undertow</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card14" style="width: 18rem;">
+                <div class="card14 product discos" >
                     <div id="carouselExample14" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -454,14 +471,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">Lateralus</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card15" style="width: 18rem;">
+                <div class="card15 product discos" >
                     <div id="carouselExample15" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -481,14 +497,13 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">10,000 days</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 
-                <div class="card16" style="width: 18rem;">
+                <div class="card16 product discos" >
                     <div id="carouselExample16" class="carousel slide">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -508,10 +523,9 @@
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card’s content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Vinilo</h5>
+                        <p class="card-text">Fear inoculum</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
 

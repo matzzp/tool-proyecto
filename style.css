@@ -2,7 +2,9 @@
 
 body {
     background-color: black;
-    font-family: "Audiowide", sans-serif;
+    font-family: "Saira Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: white;
     box-sizing: border-box;
     margin: 0px;
@@ -28,12 +30,45 @@ header {
     align-items: center;
 }
 
+.responsivenav {
+    display: none;
+}
 
 .imagenheader {
     height: 4rem;
     
 }
 
+.botonnav {
+    background-color: black;
+    border: 3px rgb(165, 129, 29) solid;
+}
+
+
+.botonnav:hover {
+    background-color: black;
+    border: 3px rgb(165, 129, 29) solid; 
+    
+} 
+
+.botonnav:active {
+    background-color: black;
+    border: 3px rgb(165, 129, 29) solid;
+    
+}
+
+.divprinrespnav {
+    min-height: 120px;
+}
+
+.cardmenu {
+    width: 250px;
+    background-color: black;
+}
+
+.menunavresponsive ul {
+    list-style: none;
+}
 
 .menunav {
     display: flex;
@@ -44,7 +79,7 @@ header {
     font-weight: 600;
     padding: 0px;
     margin: 10px 0px 20px 0px;
-    gap: 30px;
+    gap: 40px;
     position: sticky;
     top: 0px;
    
@@ -80,14 +115,14 @@ nav a {
 
 
 .botoncompraahora {
-    font-size: 3rem;
+    font-size: 2.6rem;
     padding: 0px 10px;
     margin-left: 15%;
     border: 4px white solid;
-    background-color: rgba(0, 0, 0, 50%)
+    background-color: rgba(0, 0, 0, 50%);
+    
     
 }
-
 
 .botoncompraahora:hover {
     box-shadow: 0px 0px 20px white;
@@ -110,7 +145,7 @@ nav a {
 
 
 .botonshows {
-    font-size: 3rem;
+    font-size: 2.6rem;
     padding: 0px 10px;
     margin-bottom: 2rem;
     border: 4px white solid;
@@ -152,7 +187,7 @@ nav a {
 
 
 .h2tour{
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: underline;
     text-shadow: 0px 0px 10px white;
 
@@ -172,13 +207,18 @@ nav a {
 
 
 .tablatour tr th, .tablatour tr td {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    text-align: center;
+    font-size: 1.7rem;
+    padding: 0.5rem 1.5rem;
+    
     
        
 }
-
+.fondohome2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
 /* FONDO DEBAJO CARRUSEL HOME */
 
 .fondohome2 {
@@ -213,6 +253,7 @@ nav a {
     justify-content: space-evenly;
     margin: 4rem 0;
     
+    
 }
 
 
@@ -220,6 +261,7 @@ nav a {
     width: 23%;
     border: 2px white solid;
     border-radius: 12px;
+    
     
         
 }
@@ -241,11 +283,11 @@ nav a {
 
 
 .divinfomiembros {
-    border: red 2px solid;
-    background-color: rgb(243, 243, 242);
+    background-color: rgb(201, 201, 201);
     color: black;
     border-radius: 7px;
     margin: 0.4rem 0.2rem;
+    
     
     
     
@@ -257,6 +299,7 @@ nav a {
     padding: 1rem 0.2rem;
     max-width: 95%;
     min-height: 25rem;
+    height: 500px;
     
     
     
@@ -279,7 +322,7 @@ nav a {
     
 }
 
-
+/* MERCH */
 .sectionmerch {
     display: flex;
     margin-top: 5rem;
@@ -297,6 +340,7 @@ nav a {
 
 
 .divmerch > * {
+    width: 18rem;
     min-width: 20%;
     margin: 0% 2% 3% 2%;
     
@@ -331,41 +375,105 @@ nav a {
 }
 
 
-.lista-merch li a {
-    text-decoration: none;
-    color: white;
+.product {
+  display: none;
 }
 
 
-.lista-merch li a:hover {
-    color: rgb(126, 124, 124);
-    text-decoration: underline;
+#todos:checked ~ .divmerch .product {
+  display: block;
+  
 }
 
+
+#ropa:checked ~ .divmerch .ropa {
+  display: block;
+  
+}
+
+
+#otros:checked ~ .divmerch .otros {
+  display: block;
+}
+
+
+#discos:checked ~ .divmerch .discos {
+  display: block;
+}
+
+.lista-merch label {
+  cursor: pointer;
+}
+
+.sectionmerch input {
+  display: none;
+}
+
+.divnavmerch ul li:hover {
+    background-color: rgb(49, 49, 49);
+    
+}
 
 /* MUSIC */
+
 
 .seccionmusic {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(./pag/music/background-music.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: sticky;
-    max-height: 1080px;
     padding-top: 5rem;
+    width: 100%;
+    
+
 }
+
 
 .divalbum {
     display: flex;
     flex-direction: column;
-    border: 2px red solid;
-    min-width: 45%;
-
-}
-.letspo {
-    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 60%;
+    
     
 }
+
+
+.divalbum div img {
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 100%;
+
+
+}
+.divalbum div {
+    align-items: center;
+    width: 85%;
+}
+
+.divspolet {
+    display: flex;
+    
+    gap: 10px;
+    width: 100%;
+
+}
+.divlet {
+    max-width: 40%;
+}
+
+.divspolet div ol {
+    padding-left: 25px;
+    
+}
+
+.divspo {
+    width: 60%;
+}
+
+
+
+
+
+
+

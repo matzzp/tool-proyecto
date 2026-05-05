@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Betania+Patmos&family=Bungee&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=BJCree:wght@400;500;600;700&family=Betania+Patmos&family=Bungee&family=Noto+Sans+SC:wght@100..900&family=Paprika&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+BR:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik+Mono+One&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Tool</title>
 </head>
 <body>
     <header>
+        <div class="responsivenav">
+            <p>
+                <button class="btn btn-primary botonnav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    ☰
+                </button>
+            </p>
+            <div class="divprinrespnav">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body cardmenu" >
+                       <nav class="menunavresponsive">
+                            <ul>
+                                <li class="listamenu"><a href="#">HOME</a></li>
+                                <li class="listamenu"><a href="./pag/members.html">MEMBERS</a></li>
+                                <li class="listamenu"><a href="./pag/music.html">MUSIC</a></li>
+                                <li class="listamenu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
+                                <li class="listamenu"><a href="./pag/merch.html">MERCH</a></li>
+                                <li class="listamenu"><a href="./pag/tour.html">TOUR</a></li>
+                            </ul>
+                        </nav> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="divheader">
             <a href="#"><img class="imagenheader" src="./pag/logo/tool-header.jpg" alt="Nombre banda logo" /></a>
             <nav>
@@ -19,12 +43,14 @@
                     <li class="listamenu"><a href="#">HOME</a></li>
                     <li class="listamenu"><a href="./pag/members.html">MEMBERS</a></li>
                     <li class="listamenu"><a href="./pag/music.html">MUSIC</a></li>
-                    <li class="listamenu"><a href="./pag/video.html">VIDEO</a></li>
+                    <li class="listamenu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
                     <li class="listamenu"><a href="./pag/merch.html">MERCH</a></li>
                     <li class="listamenu"><a href="./pag/tour.html">TOUR</a></li>
                 </ul>
             </nav>
         </div>    
+
+        
     </header>
 
     <main>
@@ -33,7 +59,7 @@
                 <div class="carousel-item active">
                     <div class="ajustecarr">
                         <div class="botoncompraahora">
-                            <a href="./pag/merch/discos.html">COMPRAR AHORA</a>
+                            <a href="./pag/merch.html">COMPRAR AHORA</a>
                         </div>
                         <img class="slideinoculum" src="./pag/index/discoslide.jpg" alt="disco fear inoculum slide" />
                     </div>
@@ -45,7 +71,7 @@
                 <div class="carousel-item">
                     <div class="ajustecarr">
                         <div class="botoncompraahora">
-                            <a href="./pag/merch/ropa.html">COMPRAR AHORA</a>
+                            <a href="./pag/merch.html">COMPRAR AHORA</a>
                         </div>
                         <img class="slideremera" src="./pag/index/remeraslide.png" alt="remera merch"/>
                     </div>
@@ -57,24 +83,24 @@
                         <h2 class="h2tour">PROXIMOS SHOWS</h2>
                         <table class="tablatour">
                             <tr>
-                                <th>URUGUAY Mtvdeo</th>
-                                <td>3 de julio Antel arena</td>
+                                <th>URUGUAY, MONTEVIDEO</th>
+                                <td>3 de julio</td>
                             </tr>
                             <tr>
-                                <th>URUGUAY Pdu</th>
-                                <td>5 de julio Estadio Parque Artigas</td>
+                                <th>URUGUAY, PAYSANDU</th>
+                                <td>5 de julio</td>
                             </tr>
                             <tr>
-                                <th>ARGENTINA Bs. As</th>
-                                <td>9 de julio Movistar arena</td>
+                                <th>ARGENTINA, BUENOS AIRES</th>
+                                <td>9 de julio</td>
                             </tr>
                             <tr>
-                                <th>BRASIL São Paulo</th>
-                                <td>13 de julio Arena Brasileira</td>
+                                <th>BRASIL, SAO PAULO</th>
+                                <td>13 de julio</td>
                             </tr>
                         </table>
                         <div class="botonshows">
-                            <a href="./pag/tour.html">TODOS LOS SHOW</a>
+                            <a href="./pag/tour.html">TODOS LOS SHOWS</a>
                         </div>
                     </div>
                     <img src="./pag/index/back-otro.jpg" class="d-block w-100" alt="fondo slide otro">
@@ -92,7 +118,8 @@
         </div>
 
         <div class="fondohome2">
-            
+            <h2>ULTIMO VIDEO</h2>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/isJorf3yHsg?si=CfKg8U0rn0F1S3Z7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="fondohome3">
            
