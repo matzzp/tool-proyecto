@@ -350,7 +350,7 @@ nav a {
     
 }
 
- .card-body {
+ .cardmerch {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
