@@ -219,6 +219,15 @@ nav a {
     align-items: center;
     gap: 10rem;
 }
+.fondohome2 h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.fondohome2 iframe {
+    width: 60%;
+}
+
 /* FONDO DEBAJO CARRUSEL HOME */
 
 .fondohome2 {
@@ -591,6 +600,15 @@ nav a {
     
     }
 
+     .fondohome2 h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    }
+
+    .fondohome2 iframe {
+    width: 70%;
+    }
+
             /*MIEMBROS*/
     .divpadremiembros{
     flex-direction: column;
@@ -770,6 +788,14 @@ nav a {
         padding: 0.2rem 0.7rem;
     }   
     
+    .fondohome2 h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    }
+
+    .fondohome2 iframe {
+    width: 70%;
+    }
     
     /* MIEMBROS */
     .divpadremiembros{
