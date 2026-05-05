@@ -519,6 +519,310 @@ nav a {
     
 }
 
+/*responsive*/
+
+@media (max-width: 576px) {
+            /*HOME*/
+    header {
+        display: flex;
+        justify-content: flex-end; 
+        
+    }
+    
+    .menunav {
+        display: none;
+        
+    }
+    
+    .responsivenav {
+        display: block;
+        position: absolute;
+        left: 10px; 
+
+    } 
+
+    .botoncompraahora:hover {
+    box-shadow: 0px 0px 8px white;
+
+    }
+
+    .slideinoculum, .slideremera {
+    filter: drop-shadow(0 0px 8px white);
+
+    }
+
+    .botoncompraahora {
+    font-size: 0.9rem;
+    padding: 0px 2px;
+    margin-left: 12%;
+    border: 2px white solid;
+    background-color: rgba(0, 0, 0, 50%);
+    }
+    .slideinoculum {
+    width: 37%;
+    margin-right: 11%;
+        
+    }
+
+
+    .slideremera{
+    width: 40%;
+    margin-right: 8%;
+
+    }
+
+    .botonshows {
+    font-size: 1rem;
+    padding: 0px 10px;
+    margin-bottom: 2rem;
+    border: 2px white solid;
+    background-color: rgba(0, 0, 0, 50%);
+    
+    }
+
+    .h2tour{
+    font-size: 1rem;
+   
+    }
+
+    .tablatour tr th, .tablatour tr td {
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+    
+    }
+
+            /*MIEMBROS*/
+    .divpadremiembros{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    }
+    
+    .targetauni {
+        min-width: 90%;
+        margin-bottom: 2rem;
+    }
+
+            /*MERCH*/
+
+    .sectionmerch {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    }
+
+    .divnavmerch {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    
+    }
+
+    .lista-merch {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+
+    }
+
+    .lista-merch li {
+    margin-top: 0;
+    }
+
+    .divmerch > * {
+    max-width: 40%;
+    margin: 0% 2% 3% 2%;
+    
+    
+    }
+    .divmerch {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+        
+    }
+
+    /* MUSIC */
+
+    .divalbum {
+    width: 90%;
+    }
+    .divspolet {
+        flex-direction: column;
+        
+    }
+    .divspolet div ol {
+        display: none;
+    }
+    
+    /* TOUR */
+
+    .imagen-tour-resp {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+ .imagen-tour {
+    display: none;
+    
+    }
+
+    .fechastour {
+    width: 100%;
+    gap: 3rem;
+    }
+    .fecha-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    
+    }
+
+    .fechastour div p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    }
+
+    .fechastour div span {
+    font-size: 1rem;
+    margin-left: 1rem;
+        
+    }
+    .botonticket {
+    margin-left: 1rem;
+    width: 120px;
+    height: 35px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    
+    }
+
+}
+    
+
+
+@media (min-width:577px) and (max-width:1024px) {
+        /* HOME */
+    .divheader nav {
+        width: 100%;
+    }
+
+    .menunav {
+        width: 100%;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .botoncompraahora:hover {
+    box-shadow: 0px 0px 13px white;
+
+    }
+
+    .slideinoculum, .slideremera {
+    filter: drop-shadow(0 0px 13px white);
+    }
+
+    .botoncompraahora {
+    font-size: 1.5rem;
+    padding: 0px 2px;
+    margin-left: 12%;
+    border: 2px white solid;
+    background-color: rgba(0, 0, 0, 50%);
+    }
+    .slideinoculum {
+    width: 37%;
+    margin-right: 11%;
+        
+    }
+
+
+    .slideremera{
+    width: 40%;
+    margin-right: 8%;
+
+    }
+
+    .botonshows {
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    margin-bottom: 2rem;
+    border: 4px white solid;
+    background-color: rgba(0, 0, 0, 50%);
+    
+    }
+
+    .h2tour{
+    font-size: 1.7rem;
+   
+    }
+
+    .tablatour tr th, .tablatour tr td {
+        font-size: 1.2rem;
+        padding: 0.2rem 0.7rem;
+    }   
+    
+    
+    /* MIEMBROS */
+    .divpadremiembros{
+    flex-wrap: wrap;
+    }
+    .targetauni {
+    width: 45%;
+    margin-bottom: 2rem;
+    }
+        /* MUSIC */
+      .divalbum {
+    width: 90%;
+}   
+    
+    /* MERCH */
+
+    .divnavmerch {
+        margin-right: 50px;
+    }
+
+    .divmerch > * {
+    max-width: 40%;
+    margin: 0% 2% 3% 2%;
+    
+}
+    /* TOUR */
+
+    .fechastour {
+    width: 100%;
+    gap: 3rem;
+    }
+
+    .fechastour div p {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    }
+
+    .fechastour div span {
+    font-size: 1rem;
+    margin-left: 1rem;
+        
+    }
+    .botonticket {
+    margin-right: 1rem;
+    height: 45px;
+    font-size: 1rem;
+    width: 120px;
+    
+    }
+
+
+}
 
 
 
