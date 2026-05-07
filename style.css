@@ -258,22 +258,36 @@ nav a {
 
 /* MIEMBROS */
 
-.divpadremiembros{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 4rem 0;
+.padremiembros{
+    display: grid;
+    grid-template-areas: 
+    "maynard adam danny justin";
+    grid-template-rows: auto;
+    grid-template-columns: 22% 22% 22% 22%;
+    justify-content: center;
+    gap: 0 2%;
     
     
 }
-
+.maynard {
+    grid-area: maynard;
+}
+.adam {
+    grid-area: adam;
+}
+.danny {
+    grid-area: danny;
+}
+.justin {
+    grid-area: justin;
+}
 
 .targetauni {
-    width: 23%;
+    width: 100%;
     border: 2px white solid;
     border-radius: 12px;
-    
-    
-        
+    margin-top: 1rem;
+
 }
 
 
@@ -544,6 +558,7 @@ nav a {
         display: flex;
         justify-content: flex-end; 
         
+        
     }
     
     .menunav {
@@ -623,17 +638,19 @@ nav a {
     }
     
             /*MIEMBROS*/
-    .divpadremiembros{
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    .padremiembros{
     
-    }
-    
-    .targetauni {
-        min-width: 90%;
-        margin-bottom: 2rem;
-    }
+    grid-template-areas: 
+    "maynard" 
+    "adam"
+    "danny"
+    "justin" ;
+    grid-template-rows: auto;
+    grid-template-columns: 90%;
+    margin-top: 3rem;    
+}
+
+
 
             /*MERCH*/
 
@@ -816,13 +833,16 @@ nav a {
     height: 70%;
     }
     /* MIEMBROS */
-    .divpadremiembros{
-    flex-wrap: wrap;
-    }
-    .targetauni {
-    width: 45%;
-    margin-bottom: 2rem;
-    }
+ 
+    .padremiembros{   
+    grid-template-areas: 
+    "maynard adam"
+    "danny justin" ;
+    grid-template-rows: auto;
+    grid-template-columns: 45% 45%;
+        
+}
+
         /* MUSIC */
     .divalbum {
     width: 75%;
