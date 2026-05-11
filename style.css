@@ -28,54 +28,62 @@ header {
     
 }
 
-
-.divheader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.responsivenav {
+.responsive-nav {
     display: none;
 }
 
-.imagenheader {
-    height: 4rem;
-    
-}
-
-.botonnav {
+.boton-nav {
     background-color: black;
     border: 3px rgb(165, 129, 29) solid;
 }
 
 
-.botonnav:hover {
+.boton-nav:hover {
     background-color: black;
     border: 3px rgb(165, 129, 29) solid; 
     
 } 
 
-.botonnav:active {
+.boton-nav:active {
     background-color: black;
     border: 3px rgb(165, 129, 29) solid;
     
 }
 
-.divprinrespnav {
+.div-nav-responsive {
     min-height: 120px;
 }
 
-.cardmenu {
+
+.card-menu {
     width: 250px;
     background-color: black;
 }
 
-.menunavresponsive ul {
+.menu-nav-responsive ul {
     list-style: none;
 }
 
-.menunav {
+.lista-menu:hover {
+    transition: 0.5s;
+    color: grey;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.div-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagen-header {
+    height: 4rem;
+    
+}
+
+.menu-nav {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
@@ -98,13 +106,7 @@ nav a {
 }
 
 
-.listamenu:hover {
-    transition: 0.5s;
-    color: grey;
-    text-decoration: underline;
-    transform: scale(1.2);
 
-}
 
 /* CARRUSEL DE HOME */
 
@@ -119,30 +121,31 @@ nav a {
 }
 
 
-.botoncompraahora {
-    font-size: 2.6rem;
+.boton-compra-ahora {
+    font-size: 2.4rem;
     padding: 0px 10px;
     margin-left: 15%;
     border: 4px white solid;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 50%);
     
     
     
 }
 
-.botoncompraahora:hover {
+.boton-compra-ahora:hover {
     box-shadow: 0px 0px 20px white;
 
 }
 
-.botoncompraahora a {
+.boton-compra-ahora a {
     text-decoration: none;
     color: white;
 
 }
 
 
-.botonshows a {
+.boton-shows a {
     text-decoration: none;
     color: white;
     
@@ -150,49 +153,50 @@ nav a {
 }
 
 
-.botonshows {
+.boton-shows {
     font-size: 2.6rem;
     padding: 0px 10px;
     margin-bottom: 2rem;
     border: 4px white solid;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 50%)
     
 }
 
 
-.botonshows:hover {
+.boton-shows:hover {
     box-shadow: 0px 0px 20px white;
 
 }
 
 
-.botonshows a {
+.boton-shows a {
     text-decoration: none;
     color: white;
  
 }
 
-.slideinoculum {
+.slide-inoculum {
     width: 30%;
     margin-right: 15%;
         
 }
 
 
-.slideremera{
+.slide-remera{
     width: 35%;
     margin-right: 12%;
 
 }
 
 
-.slideinoculum, .slideremera {
+.slide-inoculum, .slide-remera {
     filter: drop-shadow(0 0px 20px white);
     
 }
 
 
-.h2tour{
+.h2-tour{
     font-size: 3rem;
     text-decoration: underline;
     text-shadow: 0px 0px 10px white;
@@ -212,7 +216,7 @@ nav a {
 }
 
 
-.tablatour tr th, .tablatour tr td {
+.tabla-tour tr th, .tabla-tour tr td {
     font-size: 1.7rem;
     padding: 0.5rem 1.5rem;
     
@@ -224,7 +228,7 @@ nav a {
 
 /* FONDO DEBAJO CARRUSEL HOME */
 
-.fondohome2 {
+.fondo-home2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,19 +241,19 @@ nav a {
     background-position: center;
 
 }
-.fondohome2 h2 {
-    font-size: 4rem;
+.fondo-home2 h2 {
+    font-size: 3rem;
     margin-top: 3rem;
     
 }
-.divvideo {
+.div-video {
     display: flex;
     justify-content: center;
     width: 100%;
     aspect-ratio: 16 / 9;
 }
 
-.fondohome2 iframe {
+.fondo-home2 iframe {
     width: 60%;
     height: 60%;
 }
@@ -258,15 +262,15 @@ nav a {
 
 /* MIEMBROS */
 
-.padremiembros{
+.padre-miembros {
     display: grid;
     grid-template-areas: 
     "maynard adam danny justin";
     grid-template-rows: auto;
-    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
     justify-content: center;
-    gap: 0 2%;
-    
+    gap: 0 1%;
+    margin-top: 6rem;
     
 }
 .maynard {
@@ -282,50 +286,41 @@ nav a {
     grid-area: justin;
 }
 
-.targetauni {
+.targeta-uni {
     width: 100%;
     border: 2px white solid;
     border-radius: 12px;
-    margin-top: 1rem;
+    
 
 }
-
-
-.imagenintegrante {
-    border-radius: 8px;    
-    width: 95%;
-
-}
-
-
-.imagenajus {
+.imagen-ajuste {
     display: flex;
     justify-content: center;
     margin-top: 1.5%;
 
 }
 
+.imagen-integrante {
+    border-radius: 8px;    
+    width: 95%;
 
-.divinfomiembros {
+}
+
+.div-info-miembros {
     background-color: rgb(201, 201, 201);
     color: black;
     border-radius: 7px;
-    margin: 0.4rem 0.2rem;
-    
-    
-    
+    margin: 0.4rem 0.2rem;  
     
 }
 
 
-.informiembros {
+.info-miembros {
     text-align: left;
     padding: 1rem 0.2rem;
     max-width: 95%;
     min-height: 25rem;
     height: 500px;
-    
-    
     
 }
 
@@ -347,7 +342,7 @@ nav a {
 }
 
 /* MERCH */
-.sectionmerch {
+.section-merch {
     display: flex;
     margin-top: 5rem;
     
@@ -355,7 +350,7 @@ nav a {
 }
 
 
-.divmerch {
+.div-merch {
     min-width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -363,14 +358,14 @@ nav a {
 }
 
 
-.divmerch > * {
+.div-merch > * {
     max-width: 25%;
     min-width: 20%;
     margin: 0% 2% 3% 2%;
     
 }
 
- .cardmerch {
+ .card-merch {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -378,14 +373,14 @@ nav a {
     height: 120px;
 }
 
-.divnavmerch {
+.div-nav-merch {
     background-color: black;
     min-width: 20%;
          
 }
 
 
-.divnavmerch ul {
+.div-nav-merch ul {
     position: sticky;
     top: 10rem;
 
@@ -411,24 +406,24 @@ nav a {
 }
 
 
-#todos:checked ~ .divmerch .product {
+#todos:checked ~ .div-merch .product {
   display: block;
   
 }
 
 
-#ropa:checked ~ .divmerch .ropa {
+#ropa:checked ~ .div-merch .ropa {
   display: block;
   
 }
 
 
-#otros:checked ~ .divmerch .otros {
+#otros:checked ~ .div-merch .otros {
   display: block;
 }
 
 
-#discos:checked ~ .divmerch .discos {
+#discos:checked ~ .div-merch .discos {
   display: block;
 }
 
@@ -436,11 +431,11 @@ nav a {
   cursor: pointer;
 }
 
-.sectionmerch input {
+.section-merch input {
   display: none;
 }
 
-.divnavmerch ul li:hover {
+.div-nav-merch ul li:hover {
     background-color: rgb(49, 49, 49);
     
 }
@@ -448,7 +443,7 @@ nav a {
 /* MUSIC */
 
 
-.seccionmusic {
+.seccion-music {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,7 +454,7 @@ nav a {
 }
 
 
-.divalbum {
+.div-album {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,34 +465,34 @@ nav a {
 }
 
 
-.divalbum div img {
+.div-album div img {
     margin-bottom: 1rem;
     border-radius: 20px;
     width: 100%;
 
 
 }
-.divalbum div {
+.div-album div {
     align-items: center;
     width: 85%;
 }
 
-.divspolet {
+.div-sporify-tracklist {
     display: flex;
     gap: 10px;
     width: 100%;
 
 }
-.divlet {
+.div-track {
     max-width: 40%;
 }
 
-.divspolet div ol {
+.div-sporify-tracklist div ol {
     padding-left: 25px;
     
 }
 
-.divspo {
+.div-spotify {
     width: 60%;
 }
 
@@ -509,7 +504,7 @@ nav a {
     width: 100%;
  } 
  
- .divtour {
+ .div-tour {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,17 +512,17 @@ nav a {
     
  }  
 
-.fechastour {
+.fechas-tour {
     display: flex;
     flex-direction: column;
     gap: 4rem;
     width: 75%;
 }
-.fechastour div h3 {
+.fechas-tour div h3 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
-.fechastour div span {
+.fechas-tour div span {
     font-size: 1.7rem;
     color: rgb(179, 179, 179);
     margin-right: 1.3rem;
@@ -538,7 +533,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
 }
-.botonticket {
+.boton-ticket {
     width: 150px;
     height: 50px;
     border: rgb(253, 151, 151) 2px solid;
@@ -550,7 +545,89 @@ nav a {
     
 }
 
-/*responsive*/
+.boton-ticket:hover {
+    border: rgb(250, 180, 180) 2px solid;
+    background-color: rgba(202, 20, 20, 0.808);
+    
+}
+
+    /* FOOTER */
+
+.div-footer {
+    background-color: rgb(49, 49, 49);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+
+}
+
+.div-social {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 60px;
+    
+    
+    
+}
+
+
+.contenedor-hover-redes {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.imagen-social {
+    width: 100%;
+    
+}
+
+
+.logo-color {
+    width: 100%;
+    display: none;
+    
+}
+.contenedor-hover-redes:hover .logo-color {
+  display: block;
+  transition: 3s;
+}
+
+.contenedor-hover-redes:hover .imagen-social {
+  display: none;
+}
+.div-go-up {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-up {
+    width: 40px;
+    height: 100%;
+    background-color: rgb(170, 166, 166);
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+.arrow-up:hover {
+    box-shadow: 0px 0px 4px white;
+}
+
+
+
+
+
+    /*responsive*/
 
 @media (max-width: 576px) {
             /*HOME*/
@@ -561,49 +638,49 @@ nav a {
         
     }
     
-    .menunav {
+    .menu-nav {
         display: none;
         
     }
     
-    .responsivenav {
+    .responsive-nav {
         display: block;
         position: absolute;
         left: 10px; 
 
     } 
 
-    .botoncompraahora:hover {
+    .boton-compra-ahora:hover {
     box-shadow: 0px 0px 8px white;
 
     }
 
-    .slideinoculum, .slideremera {
+    .slide-inoculum, .slide-remera {
     filter: drop-shadow(0 0px 8px white);
 
     }
 
-    .botoncompraahora {
+    .boton-compra-ahora {
     font-size: 0.9rem;
     padding: 0px 2px;
     margin-left: 12%;
     border: 2px white solid;
     background-color: rgba(0, 0, 0, 50%);
     }
-    .slideinoculum {
+    .slide-inoculum {
     width: 37%;
     margin-right: 11%;
         
     }
 
 
-    .slideremera{
+    .slide-remera{
     width: 40%;
     margin-right: 8%;
 
     }
 
-    .botonshows {
+    .boton-shows {
     font-size: 1rem;
     padding: 0px 10px;
     margin-bottom: 2rem;
@@ -612,33 +689,33 @@ nav a {
     
     }
 
-    .h2tour{
+    .h2-tour{
     font-size: 1rem;
    
     }
 
-    .tablatour tr th, .tablatour tr td {
+    .tabla-tour tr th, .tabla-tour tr td {
     font-size: 1rem;
     padding: 0.1rem 0.5rem;
     
     }
-    .fondohome2 {
+    .fondo-home2 {
     gap: 0rem;
 
     }
 
-     .fondohome2 h2 {
-    font-size: 1.8rem;
+     .fondo-home2 h2 {
+    font-size: 1rem;
     margin-top: 1rem;
     }
 
-    .fondohome2 iframe {
+    .fondo-home2 iframe {
     width: 75%;
     height: 75%;
     }
     
             /*MIEMBROS*/
-    .padremiembros{
+    .padre-miembros{
     
     grid-template-areas: 
     "maynard" 
@@ -647,20 +724,20 @@ nav a {
     "justin" ;
     grid-template-rows: auto;
     grid-template-columns: 90%;
-    margin-top: 3rem;    
+    margin-top: 4rem;    
 }
 
 
 
             /*MERCH*/
 
-    .sectionmerch {
+    .section-merch {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
     }
 
-    .divnavmerch {
+    .div-nav-merch {
     background-color: black;
     display: flex;
     justify-content: space-evenly;
@@ -682,14 +759,14 @@ nav a {
     margin-top: 0;
     }
 
-    .divmerch > * {
+    .div-merch > * {
     max-width: 40%;
     margin: 0% 2% 3% 2%;
     
     
     
     }
-    .divmerch {
+    .div-merch {
     margin-top: 1.5rem;
     width: 100%;
     display: flex;
@@ -700,15 +777,15 @@ nav a {
 
     /* MUSIC */
     
-    .divalbum {
+    .div-album {
     width: 85%;
     margin-bottom: 2rem;
     }
-    .divspolet {
+    .div-sporify-tracklist {
         flex-direction: column;
         
     }
-    .divspolet div ol {
+    .div-sporify-tracklist div ol {
         display: none;
     }
     
@@ -724,7 +801,7 @@ nav a {
     
     }
 
-    .fechastour {
+    .fechas-tour {
     width: 100%;
     gap: 3rem;
     }
@@ -736,18 +813,18 @@ nav a {
     
     }
 
-    .fechastour div h3 {
+    .fechas-tour div h3 {
     font-size: 1.3rem;
     margin-left: 1rem;
     margin-bottom: 0.3rem;
     }
 
-    .fechastour div span {
+    .fechas-tour div span {
     font-size: 0.8rem;
     margin-left: 1rem;
         
     }
-    .botonticket {
+    .boton-ticket {
     margin-left: 1rem;
     width: 120px;
     height: 35px;
@@ -756,8 +833,20 @@ nav a {
     
     }
 
+    /* FOOTER */
+    .contenedor-hover-redes {
+    width: 25px;
 }
-    
+
+    .arrow-up {
+    width: 25px;
+    }
+
+    .div-footer {
+    height: 70px;
+
+}
+}
 
 
 @media (min-width:577px) and (max-width:1024px) {
@@ -766,42 +855,42 @@ nav a {
         width: 100%;
     }
 
-    .menunav {
+    .menu-nav {
         width: 100%;
         justify-content: center;
         gap: 25px;
     }
 
-    .botoncompraahora:hover {
+    .boton-compra-ahora:hover {
     box-shadow: 0px 0px 13px white;
 
     }
 
-    .slideinoculum, .slideremera {
+    .slide-inoculum, .slide-remera {
     filter: drop-shadow(0 0px 13px white);
     }
 
-    .botoncompraahora {
+    .boton-compra-ahora {
     font-size: 1.5rem;
     padding: 0px 2px;
     margin-left: 12%;
     border: 2px white solid;
     background-color: rgba(0, 0, 0, 50%);
     }
-    .slideinoculum {
+    .slide-inoculum {
     width: 37%;
     margin-right: 11%;
         
     }
 
 
-    .slideremera{
+    .slide-remera{
     width: 40%;
     margin-right: 8%;
 
     }
 
-    .botonshows {
+    .boton-shows {
     font-size: 1.5rem;
     padding: 0px 10px;
     margin-bottom: 2rem;
@@ -810,75 +899,75 @@ nav a {
     
     }
 
-    .h2tour{
+    .h2-tour{
     font-size: 1.7rem;
    
     }
 
-    .tablatour tr th, .tablatour tr td {
+    .tabla-tour tr th, .tabla-tour tr td {
         font-size: 1.2rem;
         padding: 0.2rem 0.7rem;
     }   
-    .fondohome2 {
+    .fondo-home2 {
     gap: 0rem;
     }
 
-    .fondohome2 h2 {
+    .fondo-home2 h2 {
     font-size: 2rem;
     margin-top: 1.2rem;
     }
 
-    .fondohome2 iframe {
+    .fondo-home2 iframe {
     width: 70%;
     height: 70%;
     }
     /* MIEMBROS */
  
-    .padremiembros{   
+    .padre-miembros{   
     grid-template-areas: 
     "maynard adam"
     "danny justin" ;
     grid-template-rows: auto;
     grid-template-columns: 45% 45%;
-        
+    margin-top: 4rem;
 }
 
         /* MUSIC */
-    .divalbum {
-    width: 75%;
+    .div-album {
+    width: 80%;
     
     }   
     
     /* MERCH */
 
-    .divnavmerch {
+    .div-nav-merch {
     margin-right: 50px;
     }
 
-    .divmerch > * {
+    .div-merch > * {
     max-width: 40%;
     margin: 0% 2% 3% 2%;
     
 }
     /* TOUR */
 
-    .fechastour {
+    .fechas-tour {
     width: 100%;
     gap: 3rem;
     }
 
-    .fechastour div h3 {
+    .fechas-tour div h3 {
     font-size: 2rem;
     margin-left: 1rem;
     margin-bottom: 0.3rem;
     }
 
-    .fechastour div span {
+    .fechas-tour div span {
     font-size: 1.4rem;
     margin-left: 1rem;
         
     }
-    .botonticket {
+    .boton-ticket {
     margin-right: 1rem;
     height: 45px;
     font-size: 1rem;
