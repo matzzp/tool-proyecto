@@ -1,0 +1,148 @@
+
+
+header { 
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    opacity: 85%;
+    .menu-nav {
+        .div-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                .imagen-header {
+                    height: 4rem;
+                }
+            }
+            .boton-nav {
+                display: none;
+                background-color: black;
+                border: 3px rgb(165, 129, 29) solid;
+                &:hover {
+                    background-color: black;
+                    border: 3px rgb(165, 129, 29) solid; 
+                }
+                &:active {
+                    background-color: black;
+                    border: 3px rgb(165, 129, 29) solid;
+                }
+            }
+            .collapse-horizontal {
+                .card-menu {
+                    display: none;
+                    width: 250px;
+                    background-color: black;
+                    ul {
+                        .lista-menu-res {
+                            &:hover {
+                            transition: 0.5s;
+                            color: grey;
+                            text-decoration: underline;
+                            transform: scale(1.2);
+                            }
+                            a{
+                                color: white;
+                                text-decoration: none;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }    
+            .menu-escritorio {
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    background-color: black;
+                    font-weight: 600;
+                    padding: 0px;
+                    margin: 10px 0px 20px 0px;
+                    gap: 40px;
+                    position: sticky;
+                    top: 0px;
+                    list-style: none;
+                    
+                    .lista-menu {
+                        &:hover {
+                            transition: 0.5s;
+                            color: grey;
+                            text-decoration: underline;
+                            transform: scale(1.2);
+                            }
+                        a {
+                            text-decoration: none;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+    /* FOOTER */
+
+footer {
+    .div-footer {
+        background-color: rgb(49, 49, 49);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-top: 150px;
+        .div-social {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-left: 60px;
+            .contenedor-hover-redes {
+                width: 40px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                &:hover .logo-color {
+                    display: block;
+                    transition: 3s;
+                }
+                &:hover .imagen-social {
+                display: none;
+                }
+                a{
+                    .imagen-social {
+                        width: 100%;
+                        
+                    }
+                    .logo-color {
+                        width: 100%;
+                        display: none;   
+                    }
+                }
+            }
+        }
+        .div-go-up {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            a{
+                .arrow-up {
+                    width: 40px;
+                    height: 100%;
+                    background-color: rgb(170, 166, 166);
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    &:hover {
+                        box-shadow: 0px 0px 4px white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+
+main{
+    .padre-miembros {
+        display: grid;
+        grid-template-areas: 
+        "maynard adam danny justin";
+        grid-template-rows: auto;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+        justify-content: center;
+        gap: 0 1%;
+        margin-top: 6rem;
+        .maynard {
+        grid-area: maynard;
+        }
+        .adam {
+            grid-area: adam;
+        }
+        .danny {
+            grid-area: danny;
+        }
+        .justin {
+            grid-area: justin;
+        }
+        .targeta-uni {
+            width: 100%;
+            border: 2px white solid;
+            border-radius: 12px;
+            margin-top: 1.3rem;
+            box-shadow: 0 0 12px white;
+            &:hover{
+                transform: scale(1.015);
+                box-shadow: 0 0 16px rgb(202, 20, 20, 50%);
+            }
+            .imagen-ajuste {
+                display: flex;
+                justify-content: center;
+                margin-top: 1.5%;
+                .imagen-integrante {
+                    border-radius: 8px;    
+                    width: 95%;
+                }
+            }
+            .div-info-miembros {
+                background-color: rgb(201, 201, 201);
+                color: black;
+                border-radius: 7px;
+                margin: 0.4rem 0.2rem;   
+                .info-miembros {
+                    text-align: left;
+                    padding: 1rem 0.2rem;
+                    max-width: 95%;
+                    min-height: 25rem;
+                    height: 500px;
+                }
+            }
+        }
+    }
+   
+
+}
+
+        

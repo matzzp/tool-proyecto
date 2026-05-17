@@ -9,57 +9,54 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Tool</title>
 </head>
+
 <body>
+
     <header>
-        <div class="responsive-nav">
-            <p>
+
+        <nav class="menu-nav">
+            <div class="div-header">  
+                <a href="../index.html"><img class="imagen-header" src="../pag/logo/tool-header.jpg" alt="Logo banda" /></a>
                 <button class="btn btn-primary boton-nav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
                     ☰
                 </button>
-            </p>
-            <div class="div-nav-responsive">
                 <div class="collapse collapse-horizontal" id="collapseWidthExample">
                     <div class="card card-body card-menu" >
-                       <nav class="menu-nav-responsive">
-                            <ul>
-                                <li class="lista-menu"><a href="../index.html">HOME</a></li>
-                                <li class="lista-menu"><a href="./members.html">MEMBERS</a></li>
-                                <li class="lista-menu"><a href="#">MUSIC</a></li>
-                                <li class="lista-menu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
-                                <li class="lista-menu"><a href="./merch.html">MERCH</a></li>
-                                <li class="lista-menu"><a href="./tour.html">TOUR</a></li>
-                            </ul>
-                        </nav> 
+                        <ul>
+                            <li class="lista-menu-res"><a href="../index.html">HOME</a></li>
+                            <li class="lista-menu-res"><a href="../pag/members.html">MEMBERS</a></li>
+                            <li class="lista-menu-res"><a href="#">MUSIC</a></li>
+                            <li class="lista-menu-res"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
+                            <li class="lista-menu-res"><a href="../pag/merch.html">MERCH</a></li>
+                            <li class="lista-menu-res"><a href="../pag/tour.html">TOUR</a></li>
+                        </ul>
                     </div>
                 </div>
+                <div class="menu-escritorio">
+                    <ul>
+                        <li class="lista-menu"><a href="../index.html">HOME</a></li>
+                        <li class="lista-menu"><a href="../pag/members.html">MEMBERS</a></li>
+                        <li class="lista-menu"><a href="#">MUSIC</a></li>
+                        <li class="lista-menu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
+                        <li class="lista-menu"><a href="../pag/merch.html">MERCH</a></li>
+                        <li class="lista-menu"><a href="../pag/tour.html">TOUR</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </nav>
 
-        <div class="div-header">
-            <a href="../index.html"><img class="imagen-header" src="./logo/tool-header.jpg" alt="Nombre banda logo" /></a>
-            <nav>
-                <ul class="menu-nav">
-                    <li class="lista-menu"><a href="../index.html">HOME</a></li>
-                    <li class="lista-menu"><a href="./members.html">MEMBERS</a></li>
-                    <li class="lista-menu"><a href="#">MUSIC</a></li>
-                    <li class="lista-menu"><a target="_blank" href="https://www.youtube.com/channel/UC1wUo-29zS7m_Jp-U_xYcFQ">VIDEO</a></li>
-                    <li class="lista-menu"><a href="./merch.html">MERCH</a></li>
-                    <li class="lista-menu"><a href="./tour.html">TOUR</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
     
     <main>
         <section class="seccion-music">
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Opiate</h2>
                 <div>        
-                    <img src="./music/opiate.jpg" alt="Disco opiate"/>
+                    <img src="./music/opiate.jpg" loading="lazy" alt="Disco opiate"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify">
@@ -81,10 +78,10 @@
             
             
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Undertow</h2>
                 <div >        
-                    <img src="./music/undertow.jpg" alt="Disco undertow"/>
+                    <img src="./music/undertow.jpg" loading="lazy" alt="Disco undertow"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify">
@@ -109,10 +106,10 @@
 
 
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Ænima</h2>
                 <div>        
-                    <img src="./music/aenima.jpg" alt="Disco aenima"/>
+                    <img src="./music/aenima.jpg" loading="lazy" alt="Disco aenima"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify">
@@ -142,10 +139,10 @@
 
 
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Lateralus</h2>
                 <div>        
-                    <img src="./music/lateralus.jpg" alt="Disco lateralus"/>
+                    <img src="./music/lateralus.jpg" loading="lazy" alt="Disco lateralus"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify">
@@ -173,10 +170,10 @@
 
 
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>10,000 days</h2>
                 <div>        
-                    <img src="./music/10,000-days.jpg" alt="Disco 10,000 days"/>
+                    <img src="./music/10,000-days.jpg" loading="lazy" alt="Disco 10,000 days"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify">
@@ -202,10 +199,10 @@
 
 
             
-            <article class="div-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
+            <article class="art-album" data-aos="zoom-out-up" data-aos-delay="500" data-aos-duration="1000">
                 <h2>Fear inoculum</h2>
                 <div>        
-                    <img src="./music/fear-inoculum.jpg" alt="Disco fear inoculum"/>
+                    <img src="./music/fear-inoculum.jpg" loading="lazy" alt="Disco fear inoculum"/>
                 </div>
                 <div class="div-sporify-tracklist">
                     <div class="div-spotify"> 

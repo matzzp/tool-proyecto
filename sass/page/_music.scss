@@ -1,0 +1,41 @@
+
+main{
+    .seccion-music {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+        width: 100%;
+        .art-album {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 4rem;
+            width: 45%;
+            div{
+                align-items: center;
+                width: 85%;
+                img {
+                    margin-bottom: 1rem;
+                    border-radius: 20px;
+                    width: 100%;
+                }
+            }
+            .div-sporify-tracklist {
+                display: flex;
+                gap: 10px;
+                width: 85%;
+                .div-spotify {
+                    width: 60%;
+                }
+                .div-track {
+                    max-width: 40%;
+                    ol {
+                        padding-left: 25px; 
+                    }
+                }
+            }
+        }
+    }
+
+}
