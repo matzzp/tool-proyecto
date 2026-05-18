@@ -1,0 +1,212 @@
+@media (min-width:577px) and (max-width:1024px) {
+
+    body{
+        header {
+            .menu-nav{
+                .div-header {
+                    a {
+                        .imagen-header {
+                            height: 3.2rem;
+                        }
+                    }
+                    .menu-escritorio {
+                        ul{
+                        font-weight: 550;
+                        gap: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+        footer {
+            .div-footer {
+                height: 85px;
+                .div-social{
+                    .contenedor-hover-redes {
+                        width: 32px;
+                    } 
+                }
+                .div-go-up {
+                    a {
+                        .arrow-up {
+                        width: 32px;
+                        }
+                    }
+                }
+            }   
+        }
+    
+
+        /* INDEX */
+
+    
+    main{
+        section{
+            .carousel-fade{
+                .carousel-inner{
+                    .carousel-item{
+                        .ajuste-carr {
+                            .boton-compra-ahora {
+                                font-size: 1.3rem;
+                                padding: 0px 6px;
+                                margin-left: 14%;
+                                border: 3px white solid;
+                                &:hover {
+                                    box-shadow: 0px 0px 12px white;
+                                    }
+                            }
+                            .slide-inoculum {
+                                width: 34%;
+                                margin-right: 13%;
+                                filter: drop-shadow(0 0px 12px white);
+                            }
+                            .slide-remera {
+                                width: 37%;
+                                margin-right: 10%;
+                                filter: drop-shadow(0 0px 12px white);
+                            }
+                        }
+                        .carousel-tour {
+                            .h2-tour {
+                                font-size: 2rem;
+                            }
+                            .tabla-tour {
+                                tr {
+                                    th{
+                                        font-size: 1.2rem;
+                                        padding: 0.3rem 1rem;
+                                    }
+                                    td {
+                                        font-size: 1rem;
+                                        padding: 0.1rem 0.5rem;
+                                    }
+                                }
+                            }
+                            .boton-shows {
+                                font-size: 1.3rem;
+                                padding: 0px 6px;
+                                margin-bottom: 1.5rem;
+                                border: 3px white solid;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            .fondo-home2{
+                gap: 2rem;
+                h2{
+                    font-size: 2rem;
+                    margin-top: 2rem;
+                }
+                .div-video{
+                    iframe {
+                        width: 70%;
+                        height: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+
+        /* MIEMBROS */
+
+
+    main {
+        .padre-miembros {
+            grid-template-areas: 
+            "maynard adam" 
+            "danny justin" ;
+            grid-template-rows: auto;
+            grid-template-columns: 45% 45%;
+            gap: 0 3%;
+            margin-top: 3rem;  
+            .targeta-uni {
+                box-shadow: 0 0 8px white;
+                &:hover{
+                    transform: scale(1.015);
+                    box-shadow: 0 0 12px rgb(202, 20, 20, 50%);
+                }
+            }
+        }
+    }
+
+
+        /* MERCH */
+
+    main {
+        .section-merch {
+            margin-top: 3rem;
+            .div-nav-merch {
+                .lista-merch {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                }
+            }
+            .div-merch {
+                width: 100%;
+                justify-content: space-evenly;
+                > * {
+                    max-width: 35%;
+                }
+            }
+        }
+    }
+
+
+        /* MUSIC */
+
+    main {
+        .seccion-music {
+            .art-album {
+                width: 70%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+
+    /* TOUR */
+
+    main{
+        section{
+            .imagen-tour-resp{
+                display: none;
+            }
+            .imagen-tour {
+                display: block;
+            }
+            .div-tour {
+                .fechas-tour{
+                    width: 100%;
+                    .fecha-boton {
+                        gap: 1rem;
+                        padding: 0 1rem;
+                        div{
+                            h3 {
+                                font-size: 1.8rem;
+                                margin-bottom: 0.3rem;
+                            }
+                            span {
+                                font-size: 1.3rem;      
+                            }
+                        }
+                        .boton-ticket {
+                            margin-left: 1.2rem;
+                            width: 130px;
+                            height: 40px;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

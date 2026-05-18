@@ -28,7 +28,9 @@ main{
         .div-merch {
             min-width: 80%;
             display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;   
+            padding: 0 2rem 0 0;
             > * {
                 max-width: 25%;
                 min-width: 20%;
@@ -43,6 +45,8 @@ main{
                     align-items: flex-start;
                     justify-content: space-between;
                     height: 120px;
+                    margin-left: 5px;
+                    margin-top: 3px;
                     .btn-merch {
                         display: flex;
                         align-items: center;

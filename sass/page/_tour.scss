@@ -16,12 +16,17 @@ main{
             .fechas-tour {
                 display: flex;
                 flex-direction: column;
-                gap: 4rem;
-                width: 75%;
+                gap: 2rem;
+                width: 80%;
                 .fecha-boton {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+                    padding: 1rem 2rem;
+                    &:hover {
+                        background-color: rgb(49, 49, 49);
+                        border-radius: 10px;
+                    }
                     div{
                         h3 {
                             font-size: 2.8rem;

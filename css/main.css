@@ -180,7 +180,11 @@ main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .h2-to
   text-decoration: underline;
   text-shadow: 0px 0px 10px white;
 }
-main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr th, main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr td {
+main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr th {
+  font-size: 1.7rem;
+  padding: 0.5rem 1.5rem;
+}
+main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr td {
   font-size: 1.7rem;
   padding: 0.5rem 1.5rem;
 }
@@ -205,7 +209,7 @@ main section .fondo-home2 {
   align-items: center;
   gap: 3rem;
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
   background-image: url(../../pag/background-index/fondo2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -255,7 +259,7 @@ main .padre-miembros .targeta-uni {
   box-shadow: 0 0 12px white;
 }
 main .padre-miembros .targeta-uni:hover {
-  transform: scale(1.015);
+  transform: scale(1.02);
   box-shadow: 0 0 16px rgba(202, 20, 20, 0.5);
 }
 main .padre-miembros .targeta-uni .imagen-ajuste {
@@ -349,7 +353,9 @@ main .section-merch .div-nav-merch .lista-merch li label {
 main .section-merch .div-merch {
   min-width: 80%;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 2rem 0 0;
 }
 main .section-merch .div-merch > * {
   max-width: 25%;
@@ -365,6 +371,8 @@ main .section-merch .div-merch .product .card-merch {
   align-items: flex-start;
   justify-content: space-between;
   height: 120px;
+  margin-left: 5px;
+  margin-top: 3px;
 }
 main .section-merch .div-merch .product .card-merch .btn-merch {
   display: flex;
@@ -413,13 +421,18 @@ main section .div-tour {
 main section .div-tour .fechas-tour {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  width: 75%;
+  gap: 2rem;
+  width: 80%;
 }
 main section .div-tour .fechas-tour .fecha-boton {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+}
+main section .div-tour .fechas-tour .fecha-boton:hover {
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
 }
 main section .div-tour .fechas-tour .fecha-boton div h3 {
   font-size: 2.8rem;
@@ -443,6 +456,320 @@ main section .div-tour .fechas-tour .fecha-boton .boton-ticket {
 main section .div-tour .fechas-tour .fecha-boton .boton-ticket:hover {
   border: rgb(250, 180, 180) 2px solid;
   background-color: rgba(202, 20, 20, 0.808);
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+  body header .menu-nav .div-header a .imagen-header {
+    height: 3.2rem;
+  }
+  body header .menu-nav .div-header .menu-escritorio ul {
+    font-weight: 550;
+    gap: 30px;
+  }
+  footer .div-footer {
+    height: 85px;
+  }
+  footer .div-footer .div-social .contenedor-hover-redes {
+    width: 32px;
+  }
+  footer .div-footer .div-go-up a .arrow-up {
+    width: 32px;
+  }
+  /* INDEX */
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .boton-compra-ahora {
+    font-size: 1.3rem;
+    padding: 0px 6px;
+    margin-left: 14%;
+    border: 3px white solid;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .boton-compra-ahora:hover {
+    box-shadow: 0px 0px 12px white;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-inoculum {
+    width: 34%;
+    margin-right: 13%;
+    filter: drop-shadow(0 0px 12px white);
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-remera {
+    width: 37%;
+    margin-right: 10%;
+    filter: drop-shadow(0 0px 12px white);
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .h2-tour {
+    font-size: 2rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr th {
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr td {
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .boton-shows {
+    font-size: 1.3rem;
+    padding: 0px 6px;
+    margin-bottom: 1.5rem;
+    border: 3px white solid;
+  }
+  main section .fondo-home2 {
+    gap: 2rem;
+  }
+  main section .fondo-home2 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  main section .fondo-home2 .div-video iframe {
+    width: 70%;
+    height: 70%;
+  }
+  /* MIEMBROS */
+  main .padre-miembros {
+    grid-template-areas: "maynard adam" "danny justin";
+    grid-template-rows: auto;
+    grid-template-columns: 45% 45%;
+    gap: 0 3%;
+    margin-top: 3rem;
+  }
+  main .padre-miembros .targeta-uni {
+    box-shadow: 0 0 8px white;
+  }
+  main .padre-miembros .targeta-uni:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 12px rgba(202, 20, 20, 0.5);
+  }
+  /* MERCH */
+  main .section-merch {
+    margin-top: 3rem;
+  }
+  main .section-merch .div-nav-merch .lista-merch {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  main .section-merch .div-merch {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  main .section-merch .div-merch > * {
+    max-width: 35%;
+  }
+  /* MUSIC */
+  main .seccion-music .art-album {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  /* TOUR */
+  main section .imagen-tour-resp {
+    display: none;
+  }
+  main section .imagen-tour {
+    display: block;
+  }
+  main section .div-tour .fechas-tour {
+    width: 100%;
+  }
+  main section .div-tour .fechas-tour .fecha-boton {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton div h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton div span {
+    font-size: 1.3rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton .boton-ticket {
+    margin-left: 1.2rem;
+    width: 130px;
+    height: 40px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 576px) {
+  /* HEADER Y FOOTER */
+  body header .menu-nav .div-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 4rem;
+  }
+  body header .menu-nav .div-header a .imagen-header {
+    height: 2.5rem;
+  }
+  body header .menu-nav .div-header .boton-nav {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+  body header .menu-nav .div-header .collapse-horizontal {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+  }
+  body header .menu-nav .div-header .collapse-horizontal .card-menu {
+    display: block;
+  }
+  body header .menu-nav .div-header .collapse-horizontal .card-menu ul {
+    list-style: none;
+  }
+  body header .menu-nav .div-header .menu-escritorio {
+    display: none;
+  }
+  body footer .div-footer {
+    height: 70px;
+  }
+  body footer .div-footer .div-social .contenedor-hover-redes {
+    width: 25px;
+  }
+  body footer .div-footer .div-go-up a .arrow-up {
+    width: 25px;
+  }
+  /* INDEX */
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .boton-compra-ahora {
+    font-size: 0.9rem;
+    padding: 0px 2px;
+    margin-left: 12%;
+    border: 2px white solid;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .boton-compra-ahora:hover {
+    box-shadow: 0px 0px 8px white;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-inoculum {
+    width: 37%;
+    margin-right: 11%;
+    filter: drop-shadow(0 0px 8px white);
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-remera {
+    width: 40%;
+    margin-right: 8%;
+    filter: drop-shadow(0 0px 8px white);
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .h2-tour {
+    font-size: 1rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr th {
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .tabla-tour tr td {
+    font-size: 1rem;
+    padding: 0.1rem 0.5rem;
+  }
+  main section .carousel-fade .carousel-inner .carousel-item .carousel-tour .boton-shows {
+    font-size: 1rem;
+    padding: 0px 10px;
+    margin-bottom: 1rem;
+    border: 2px white solid;
+  }
+  main section .fondo-home2 {
+    gap: 1rem;
+  }
+  main section .fondo-home2 h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  main section .fondo-home2 .div-video iframe {
+    width: 75%;
+    height: 75%;
+  }
+  /* MIEMBROS */
+  main .padre-miembros {
+    grid-template-areas: "maynard" "adam" "danny" "justin";
+    grid-template-columns: 90%;
+    margin-top: 2rem;
+  }
+  main .padre-miembros .targeta-uni {
+    box-shadow: 0 0 8px white;
+  }
+  main .padre-miembros .targeta-uni:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 12px rgba(202, 20, 20, 0.5);
+  }
+  /* MERCH */
+  main .section-merch {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  main .section-merch .div-nav-merch {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  main .section-merch .div-nav-merch .lista-merch {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  main .section-merch .div-nav-merch .lista-merch li {
+    margin-top: 0;
+  }
+  main .section-merch .div-merch {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0 20px;
+  }
+  main .section-merch .div-merch > * {
+    max-width: 45%;
+    margin: 0% 2% 3% 2%;
+  }
+  /* MUSIC */
+  main .seccion-music .art-album {
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  main .seccion-music .art-album .div-sporify-tracklist {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .seccion-music .art-album .div-sporify-tracklist .div-spotify {
+    width: 75%;
+    height: 80%;
+  }
+  main .seccion-music .art-album .div-sporify-tracklist .div-track ol {
+    display: none;
+  }
+  /* TOUR */
+  main section .imagen-tour-resp {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  main section .imagen-tour {
+    display: none;
+  }
+  main section .div-tour .fechas-tour {
+    width: 100%;
+    gap: 1rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.3rem 0.6rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton div h3 {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton div span {
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+  main section .div-tour .fechas-tour .fecha-boton .boton-ticket {
+    margin-left: 1rem;
+    width: 120px;
+    height: 35px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
