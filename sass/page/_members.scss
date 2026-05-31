@@ -1,4 +1,6 @@
 
+@use "../generales/variables" as*;
+
 main{
     .padre-miembros {
         display: grid;
@@ -8,7 +10,7 @@ main{
         grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
         justify-content: center;
         gap: 0 1%;
-        margin-top: 6rem;
+        margin-top: 2rem;
         .maynard {
         grid-area: maynard;
         }
@@ -29,7 +31,7 @@ main{
             box-shadow: 0 0 12px white;
             &:hover{
                 transform: scale(1.02);
-                box-shadow: 0 0 16px rgb(202, 20, 20, 50%);
+                box-shadow: 0 0 16px $rojo;
             }
             .imagen-ajuste {
                 display: flex;

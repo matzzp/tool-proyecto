@@ -1,3 +1,6 @@
+
+@use "../generales/variables" as*;
+
 main{
     section{
         .h2-invisible {
@@ -24,7 +27,7 @@ main{
                     align-items: center;
                     padding: 1rem 2rem;
                     &:hover {
-                        background-color: rgb(49, 49, 49);
+                        background-color: $gris;
                         border-radius: 10px;
                     }
                     div{
@@ -39,11 +42,10 @@ main{
                         }
                     }
                     .boton-ticket {
-                        width: 150px;
-                        height: 50px;
-                        border: rgb(253, 151, 151) 2px solid;
+                        @include alto-ancho (150px, 50px);
+                        border: $rosa 2px solid;
                         border-radius: 25px;
-                        background-color: rgb(202, 20, 20, 50%);
+                        background-color: $rojo;
                         font-size: 1.3rem;
                         font-weight: 600;
                         color: rgb(255, 255, 255);

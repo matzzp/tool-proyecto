@@ -1,3 +1,5 @@
+@use "../generales/variables" as*;
+
 main{
     .section-merch {
         display: flex;
@@ -17,7 +19,7 @@ main{
                 li {
                     margin-top: 2rem; 
                     &:hover {
-                        background-color: rgb(49, 49, 49);
+                        background-color: $gris;
                     }
                     label {
                         cursor: pointer;
@@ -48,14 +50,13 @@ main{
                     margin-left: 5px;
                     margin-top: 3px;
                     .btn-merch {
+                        @include alto-ancho (130px, 40px);
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 125px;
-                        height: 40px;
-                        border: rgb(253, 151, 151) 2px solid;
+                        border: $rosa 2px solid;
                         border-radius: 25px;
-                        background-color: rgb(202, 20, 20, 50%);
+                        background-color: $rojo;
                         font-size: 1.3rem;
                         font-weight: 600;
                         color: rgb(255, 255, 255);

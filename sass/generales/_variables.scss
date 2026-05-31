@@ -1,0 +1,12 @@
+
+$gris : rgb(49, 49, 49);
+$dorado : rgb(165, 129, 29);
+$rojo : rgb(202, 20, 20, 50%);
+$rosa : rgb(253, 151, 151);
+
+/* mixin */
+
+@mixin alto-ancho ($alto, $ancho) {
+    width: $alto;
+    height: $ancho;
+}

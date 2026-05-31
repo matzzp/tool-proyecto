@@ -1,3 +1,4 @@
+/* mixin */
 body {
   background-color: black;
   font-family: "Saira Stencil", sans-serif;
@@ -131,7 +132,10 @@ footer .div-footer .div-go-up a .arrow-up:hover {
 }
 
 main h1 {
-  display: none;
+  color: rgb(165, 129, 29);
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0px 0px 10px white;
 }
 main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr {
   position: absolute;
@@ -156,14 +160,9 @@ main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .boton-c
   text-decoration: none;
   color: white;
 }
-main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-inoculum {
-  width: 30%;
-  margin-right: 15%;
-  filter: drop-shadow(0 0px 20px white);
-}
-main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-remera {
-  width: 35%;
-  margin-right: 12%;
+main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-inoculum, main section .carousel-fade .carousel-inner .carousel-item .ajuste-carr .slide-remera {
+  width: 32%;
+  margin-right: 13.5%;
   filter: drop-shadow(0 0px 20px white);
 }
 main section .carousel-fade .carousel-inner .carousel-item .carousel-tour {
@@ -210,7 +209,7 @@ main section .fondo-home2 {
   gap: 3rem;
   max-width: 100%;
   max-height: 100%;
-  background-image: url(../../pag/background-index/fondo2.jpg);
+  background-image: url(../pag/background-index/fondo2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +236,7 @@ main .padre-miembros {
   grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
   justify-content: center;
   gap: 0 1%;
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 main .padre-miembros .maynard {
   grid-area: maynard;
@@ -375,11 +374,11 @@ main .section-merch .div-merch .product .card-merch {
   margin-top: 3px;
 }
 main .section-merch .div-merch .product .card-merch .btn-merch {
+  width: 130px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
-  height: 40px;
   border: rgb(253, 151, 151) 2px solid;
   border-radius: 25px;
   background-color: rgba(202, 20, 20, 0.5);
@@ -536,7 +535,6 @@ main section .div-tour .fechas-tour .fecha-boton .boton-ticket:hover {
   }
   main .padre-miembros .targeta-uni:hover {
     transform: scale(1.015);
-    box-shadow: 0 0 12px rgba(202, 20, 20, 0.5);
   }
   /* MERCH */
   main .section-merch {
@@ -686,7 +684,6 @@ main section .div-tour .fechas-tour .fecha-boton .boton-ticket:hover {
   }
   main .padre-miembros .targeta-uni:hover {
     transform: scale(1.01);
-    box-shadow: 0 0 12px rgba(202, 20, 20, 0.5);
   }
   /* MERCH */
   main .section-merch {
